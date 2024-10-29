@@ -22,13 +22,13 @@ size_t writeCallback(void* contents, size_t size, size_t nmemb, string* s) {
     return newLength;
 }
 
-// Fonction pour charger la clé API depuis le fichier .env
+
 string chargerCleAPI() {
     ifstream env_file(".env");
     string line;
     while (getline(env_file, line)) {
         if (line.find("API_KEY=") == 0) {
-            return line.substr(8);  // Extrait la clé API après "API_KEY="
+            return line.substr(8);  
         }
     }
     cerr << "Erreur : clé API non trouvée dans .env" << endl;
@@ -84,7 +84,7 @@ int main() {
         return 1;
     }
 
-    // Obtenir les taux de change en temps réel
+    
     TauxDeChange taux = obtenirTauxDeChange(api_key);
 
     if (taux.empty()) {
@@ -98,7 +98,7 @@ int main() {
     cin >> montant;
     cout << "Entrez la devise source (par exemple, CAD) : ";
     cin >> devise_source;
-    cout << "Entrez la devise de destination (par exemple, USD,XOF,EUR) : ";
+    cout << "Entrez la devise de destination (par exemple, USD,XOF,EUR,DZD,MAD,GBP) : ";
     cin >> devise_destination;
 
     double montant_converti = convertir(montant, devise_source, devise_destination, taux);
