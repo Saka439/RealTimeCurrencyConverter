@@ -1,16 +1,22 @@
 🌐 RealTimeCurrencyConverter
-RealTimeCurrencyConverter est un programme C++ permettant de convertir des devises en temps réel en utilisant l'API de Open Exchange Rates. Ce projet repose sur les bibliothèques curl pour les requêtes HTTP et nlohmann-json pour la manipulation des données JSON.
+
+RealTimeCurrencyConverter est un programme C++ permettant de convertir des devises en temps réel en utilisant l'API de Open Exchange Rates. 
+
+Ce projet repose sur les bibliothèques curl pour les requêtes HTTP et nlohmann-json pour la manipulation des données JSON.
 
 
 📋 Prérequis
 Avant de commencer, assurez-vous que vous disposez des éléments suivants :
 
 Git pour cloner le dépôt.
+
 CMake et vcpkg pour la gestion des dépendances.
+
 Un compte sur Open Exchange Rates pour obtenir une clé API (gratuite).
 
 
 ⚙️ Installation des dépendances
+
 Vérifiez que vcpkg est installé et configuré dans votre PATH.
 
 Installez les bibliothèques nécessaires avec vcpkg :
@@ -23,6 +29,7 @@ vcpkg install curl nlohmann-json
 **Clonez le dépôt:
 
 git clone https://github.com/Saka439/RealTimeCurrencyConverter.git
+
 cd RealTimeCurrencyConverter
 
 
@@ -31,7 +38,9 @@ cd RealTimeCurrencyConverter
 Si vous utilisez vcpkg comme gestionnaire de packages, configurez le projet comme suit :
 
 mkdir build
+
 cd build
+
 cmake .. -DCMAKE_TOOLCHAIN_FILE=[path_to_vcpkg]/scripts/buildsystems/vcpkg.cmake
 
 Remplacez [path_to_vcpkg] par le chemin de votre installation vcpkg
@@ -73,6 +82,7 @@ Le programme affichera le montant converti en temps réel
 
 
 📜 Licence
+
 Ce projet est sous licence MIT.
 
 
