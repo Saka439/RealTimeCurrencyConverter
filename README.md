@@ -81,7 +81,7 @@ Le programme affichera le montant converti en temps réel
 
 
 
-📜 Licence
+📜 License
 
 Ce projet est sous licence MIT.
 
