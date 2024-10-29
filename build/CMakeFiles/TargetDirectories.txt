@@ -1,0 +1,3 @@
+C:/Users/ndzan/Desktop/PortFolio/TauxDechange/build/CMakeFiles/ExchangeRates.dir
+C:/Users/ndzan/Desktop/PortFolio/TauxDechange/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ndzan/Desktop/PortFolio/TauxDechange/build/CMakeFiles/ZERO_CHECK.dir
