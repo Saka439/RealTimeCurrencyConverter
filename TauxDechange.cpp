@@ -67,7 +67,7 @@ TauxDeChange obtenirTauxDeChange(const string& api_key) {
     return taux;
 }
 
-// Fonction pour convertir un montant d'une devise à une autre
+
 double convertir(double montant, const string& devise_source, const string& devise_destination, TauxDeChange& taux) {
     if (taux.find(devise_source) == taux.end() || taux.find(devise_destination) == taux.end()) {
         cout << "Devise non prise en charge." << endl;
